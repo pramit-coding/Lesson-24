@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 24</title>
+</head>
+
+
+<body>
+    <button onclick="myFunction()">Press</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+       function myFunction(){
+        var welcome;
+        var time= new Date().getHours()
+
+        if (time < 10){
+            welcome= "Good Morning"
+        }
+
+        else if (time <16 ){
+            welcome= "Good Afternoon"
+        }
+        else{
+            welcome="Good Evening"
+        }
+
+        document.getElementById("demo").innerHTML= "current time is"+ time;
+        document.getElementById("demo2").innerHTML = welcome;
+
+       } 
+
+
+    </script>
+
+
+
+</body>
+
+</html>
